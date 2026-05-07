@@ -1,0 +1,45 @@
+baseURL = 'https://alpamayo.nl/'
+locale = 'en-us'
+title = 'Alpamayo'
+theme = "paige"
+[params.paige]
+style = """
+#paige-page { margin-left: auto; margin-right: auto; max-width: 60rem; }
+@media (max-width: 768px) {
+  #paige-page { padding-left: 1rem; padding-right: 1rem; }
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: underline;
+}
+"""
+
+[paige.pages]
+disable_authors = true
+disable_date = true
+disable_keywords = true
+disable_next = true
+disable_prev = true
+disable_reading_time = true
+disable_series = true
+disable_toc = true
+disable_word_count = true
+full_width = false
+
+[paige.subpages]
+disable_authors = true
+disable_date = true
+disable_keywords = true
+disable_reading_time = true
+disable_series = true
+disable_summary = true
+disable_word_count = true
+sectionPagesMenu = 'main'
+
+[params]
+custom_css = ["css/custom.css"]

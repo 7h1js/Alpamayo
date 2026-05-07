@@ -1,0 +1,26 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+
+.right {
+  float:right;
+  max-width: 40%;
+  margin-left: 5px
+}
+
+.left {
+  float:left;
+  max-width: 40%;
+  margin-right: 20px
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}

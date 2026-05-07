@@ -1,0 +1,5 @@
+baseURL: 'https://alpamayo.nl/'
+languageCode: "nl-nl"
+title: "Alpamayo"
+theme: "paige"
+credit: "Alpamayo"

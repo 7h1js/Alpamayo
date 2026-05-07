@@ -1,0 +1,29 @@
+<p style="text-align: center;">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+</p>
+
+
+.right {
+  float:right;
+  max-width: 40%;
+  margin-left: 5px
+}
+
+.left {
+  float:left;
+  max-width: 40%;
+  margin-right: 20px
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+<!-- 
+
+{{ if (resources.GetMatch .Destination) }}
+  <img src="
+  {{ ((resources.GetMatch .Destination).Fit `9000x9000 jpg Smart q50`).RelPermalink | safeURL }}
+  " alt="{{ .Text }}" />
+{{ end }} -->

@@ -1,0 +1,16 @@
+<style>
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  all: unset !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+</style>
+
+<!-- layouts/partials/head.html -->
+{{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}">
